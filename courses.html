@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="favicon-32x32.png">
+  <title>Our Courses - ILRC</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+ <header>
+      <div class="main-img">
+        <h1>ILRC</h1>
+      </div>
+
+      <!-- Hamburger Icon -->
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- Navigation Links -->
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">About</a>
+        <a href="courses.html" class="active">Courses</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <a href="signup.html" class="talk-btn">Sign up ➝</a>
+    </header>
+
+
+  <!-- ===== Hero / Slider Section ===== -->
+  <section class="course-slider">
+    <button class="slider-btn prev">&#10094;</button>
+    <div class="slider-container">
+      <div class="course-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiEjBilP-PBEbL7NAsVh5jU2PEYPgaGhh8-g&s" alt="Course 1">
+          <h3>Web Development</h3>
+        <p>Learn HTML, CSS, JavaScript and build responsive websites.</p>
+      </div>
+      <div class="course-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiEjBilP-PBEbL7NAsVh5jU2PEYPgaGhh8-g&s" alt="Course 2">
+        <h3>Graphic Design</h3>
+        <p>Master Photoshop, Illustrator, and creative design skills.</p>
+      </div>
+      <div class="course-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiEjBilP-PBEbL7NAsVh5jU2PEYPgaGhh8-g&s" alt="Course 3">
+        <h3>Digital Marketing</h3>
+        <p>SEO, social media marketing, and online branding strategies.</p>
+      </div>
+      <div class="course-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiEjBilP-PBEbL7NAsVh5jU2PEYPgaGhh8-g&s" alt="Course 4">
+        <h3>Data Science</h3>
+        <p>Analyze data and create predictive models using Python.</p>
+      </div>
+      <div class="course-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiEjBilP-PBEbL7NAsVh5jU2PEYPgaGhh8-g&s" alt="Course 5">
+        <h3>Mobile App Development</h3>
+        <p>Create Android and iOS apps with modern frameworks.</p>
+      </div>
+      <div class="course-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiEjBilP-PBEbL7NAsVh5jU2PEYPgaGhh8-g&s" alt="Course 6">
+        <h3>Cybersecurity</h3>
+        <p>Protect systems and networks from digital threats.</p>
+      </div>
+    </div>
+    <button class="slider-btn next">&#10095;</button>
+  </section>
+
+  <script>
+    const slider = document.querySelector('.slider-container');
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+
+    let scrollAmount = 0;
+    const cardWidth = 320; // Card + margin
+
+    nextBtn.addEventListener('click', () => {
+      slider.scrollBy({ left: cardWidth * 3, behavior: 'smooth' });
+    });
+
+    prevBtn.addEventListener('click', () => {
+      slider.scrollBy({ left: -cardWidth * 3, behavior: 'smooth' });
+    });
+  </script>
+
+</body>
+</html>

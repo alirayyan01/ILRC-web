@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="favicon-32x32.png">
+  <title>Contact Us - ILRC</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+      <div class="main-img">
+        <h1>ILRC</h1>
+      </div>
+
+      <!-- Hamburger Icon -->
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- Navigation Links -->
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="contact.html" class="active">Contact</a>
+        
+      </nav>
+
+  
+      <a href="signup.html" class="talk-btn">Sign up ➝</a>
+    </header>
+  <!-- ===== Contact Section ===== -->
+  <section class="contact-section">
+    <div class="form-container">
+      
+      <h2 class="contact-title">Contact Us</h2>
+      <p class="contact-desc">Have questions? We'd love to hear from you. Fill out the form below and we'll get back to you as soon as possible.</p>
+
+      <form>
+        <div class="form-group">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" placeholder="Enter the subject" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Write your message here..." required></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>
